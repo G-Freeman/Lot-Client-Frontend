@@ -25,6 +25,9 @@ export default Vue.extend({
 			},500);
 		}
 	},
+	beforeMount() {
+		console.log('Started');
+	},
 	mounted() {
 		this.init();
 	}
