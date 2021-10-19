@@ -1,11 +1,11 @@
 FROM node:11.13.0-alpine
 #ENV APP_ROOT /web
 #ENV NODE_ENV production
-#RUN mkdir -p /usr/src/nuxt-app
+RUN mkdir -p /usr/src/my_app
 #WORKDIR /usr/src/nuxt-app
 
-WORKDIR ${APP_ROOT}
-ADD . ${APP_ROOT}
+WORKDIR /usr/src/my_app
+ADD . /usr/src/my_app
 #RUN apk update && apk upgrade
 #RUN apk add git
 
